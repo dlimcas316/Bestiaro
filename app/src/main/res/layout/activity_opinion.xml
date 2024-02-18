@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoPagina"
+    tools:context=".Bestiario.OpinionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-133dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/fondoTitulo"
+                android:fontFamily="@font/monsterhuntericon"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:text="tu opinion"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Cual es tu nombre?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:ems="10"
+                android:fontFamily="@font/monsterhunter"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:hint="Nombre"
+                app:layout_constraintBottom_toTopOf="@id/tvSexo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+            <TextView
+                android:id="@+id/tvSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Cual es tu sexo?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/rgSexo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+
+            <RadioGroup
+                android:id="@+id/rgSexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvOpinion"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbHombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Hombre"
+                    android:textColor="@color/black" />
+                <RadioButton
+                    android:id="@+id/rbMujer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Mujer"
+                    android:textColor="@color/black" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvOpinion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Que tanto te gustó nuestra app?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgSexo" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/siMal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/fondoFuego"
+                android:src="@mipmap/gatomal"
+                app:layout_constraintBottom_toTopOf="@+id/rbGusto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOpinion"
+                app:shapeAppearanceOverlay="@style/SquareShapeImageViewStyle"
+                app:strokeColor="@color/fondoTitulo"
+                app:strokeWidth="6dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/siTieso"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/fondoAgua"
+                android:src="@mipmap/gatotieso"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/rbGusto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOpinion"
+                app:shapeAppearanceOverlay="@style/DiamondShapeImageViewStyle"
+                app:strokeColor="@color/fondoTitulo"
+                app:strokeWidth="6dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/siFeli"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/fondoRayo"
+                android:src="@mipmap/gatofeli"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/rbGusto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOpinion"
+                app:shapeAppearanceOverlay="@style/ShapeableImageViewStyle"
+                app:strokeColor="@color/fondoTitulo"
+                app:strokeWidth="6dp" />
+
+            <RatingBar
+                android:id="@+id/rbGusto"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:numStars="6"
+                android:progressTint="@color/fondoTitulo"
+                android:rating="0"
+                android:stepSize="1"
+                app:haloColor="@color/lineaInactiva"
+                app:layout_constraintBottom_toTopOf="@+id/tvCuando"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOpinion"
+                app:thumbColor="@color/fondoTitulo"
+                app:trackColor="@color/lineaInactiva" />
+
+            <TextView
+                android:id="@+id/tvCuando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/monsterhunter"
+                android:text="cuando fue la ultima vez que jugaster Monster Hunter?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/clCalendario"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rbGusto" />
+
+            <CalendarView
+                android:id="@+id/clCalendario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/fondoPaginaCV"
+                android:backgroundTint="@color/fondoPaginaCV"
+                app:layout_constraintBottom_toTopOf="@id/tvRC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCuando" />
+
+            <TextView
+                android:id="@+id/tvRC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Cual es tu rango de cazador (RC)?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/npRC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clCalendario" />
+
+            <NumberPicker
+                android:id="@+id/npRC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:solidColor="@color/black"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tvRC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvEspecieFav"/>
+
+            <TextView
+                android:id="@+id/tvEspecieFav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Cual es tu especie de monstruo preferida?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/cgEspecie"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/npRC" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/cgEspecie"
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEspecieFav"
+                app:singleSelection="true">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpHerbivoro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Herbivoro"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpNeopteron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Neopteron"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpCarapaceon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Carapaceon"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpTemnoceran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Temnoceran"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpBestiaColmillos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Bestia Colmillos"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpWyvernColmillos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Wyvern Colmillos"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpAnfibio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Anfibio"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpWyvernSerpiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Wyvern Serpiente"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpWyvernNadador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Wyvern Nadadores"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpWyvernBruto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Wyvern Bruto"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpWyvernPájaro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Wyvern Pájaro"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpWyvernVolador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Wyvern Volador"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Desconocido"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpDragonAnciano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Dragón Anciano"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cpDragonNegro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipBackgroundColor="@color/fondoTitulo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/monsterhunter"
+                    android:text="Dragón Negro"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/tvVolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Volverias a usar esta aplicación?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/stVolver"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cgEspecie" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/siNo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/fondoFuego"
+                android:src="@mipmap/gatomal"
+                app:layout_constraintEnd_toStartOf="@id/stVolver"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolver"
+                app:shapeAppearanceOverlay="@style/DiamondShapeImageViewStyle"
+                app:strokeColor="@color/fondoTitulo"
+                app:strokeWidth="6dp" />
+
+            <Switch
+                android:id="@+id/stVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/btEnviar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolver"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/siSi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/fondoRayo"
+                android:src="@mipmap/gatofeli"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/stVolver"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolver"
+                app:shapeAppearanceOverlay="@style/DiamondShapeImageViewStyle"
+                app:strokeColor="@color/fondoTitulo"
+                app:strokeWidth="6dp" />
+
+
+            <Button
+                android:id="@+id/btEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/fondoTitulo"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Enviar"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stVolver" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

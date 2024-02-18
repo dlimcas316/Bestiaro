@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fondoTitulo">#2C0A01</color>
+    <color name="fondoImagen">#775349</color>
+    <color name="fondoPagina">#CDAD97</color>
+    <color name="fondoPaginaCV">#FFD6AB</color>
+    <color name="fondoFuego">#F44336</color>
+    <color name="fondoFuegoSelect">#AF3228</color>
+    <color name="fondoAgua">#2196F3</color>
+    <color name="fondoAguaSelect">#18619C</color>
+    <color name="fondoRayo">#FFEB3B</color>
+    <color name="fondoRayoSelect">#A89B29</color>
+    <color name="fondoHielo">#76DEEC</color>
+    <color name="fondoHieloSelect">#5299A3</color>
+    <color name="fondoDraco">#FFBB86FC</color>
+    <color name="fondoDracoSelect">#7D5AA8</color>
+    <color name="fondoSin">#CACACA</color>
+    <color name="fondoSinSelect">#858585</color>
+    <color name="lineaInactiva">#412C0A01</color>
+</resources>

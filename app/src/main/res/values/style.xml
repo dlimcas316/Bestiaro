@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeableImageViewStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+        <item name="backgroundTint">@color/fondoSinSelect</item>
+    </style>
+
+    <style name="DiamondShapeImageViewStyle">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">30%</item>
+        <item name="backgroundTint">@color/fondoSinSelect</item>
+    </style>
+
+    <style name="SquareShapeImageViewStyle">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">0dp</item>
+        <item name="backgroundTint">@color/fondoSinSelect</item>
+    </style>
+
+</resources>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoPagina"
+    tools:context=".Bestiario.DetallesActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/fondoTitulo"
+                android:fontFamily="@font/monsterhuntericon"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:text="Monstruo"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:backgroundTint="@color/fondoImagen"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+                app:layout_constraintEnd_toStartOf="@+id/tvNom"
+                app:layout_constraintBottom_toTopOf="@+id/tvEle"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/tvNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="Nombre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ibIcon"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+                app:layout_constraintBottom_toTopOf="@+id/tvNombre"/>
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ibIcon"
+                app:layout_constraintTop_toBottomOf="@+id/tvNom"
+                app:layout_constraintBottom_toTopOf="@+id/tvEsp"
+                tools:layout_editor_absoluteY="165dp" />
+
+            <TextView
+                android:id="@+id/tvEsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:text="Especie"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ibIcon"
+                app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+                app:layout_constraintBottom_toTopOf="@+id/tvEspecie"
+                tools:layout_editor_absoluteY="203dp" />
+
+            <TextView
+                android:id="@+id/tvEspecie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ibIcon"
+                app:layout_constraintTop_toBottomOf="@+id/tvEsp"
+                app:layout_constraintBottom_toTopOf="@+id/tvTam"
+                tools:layout_editor_absoluteY="253dp" />
+            <TextView
+                android:id="@+id/tvTam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:text="Tamaño"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ibIcon"
+                app:layout_constraintTop_toBottomOf="@+id/tvEspecie"
+                app:layout_constraintBottom_toTopOf="@+id/tvTamaño"
+                tools:layout_editor_absoluteY="203dp" />
+
+            <TextView
+                android:id="@+id/tvTamaño"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ibIcon"
+                app:layout_constraintTop_toBottomOf="@+id/tvTam"
+                app:layout_constraintBottom_toTopOf="@+id/tvEle"
+                tools:layout_editor_absoluteY="253dp" />
+
+            <TextView
+                android:id="@+id/tvEle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="Elemento"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibIcon"
+                app:layout_constraintBottom_toTopOf="@+id/tvElemento"/>
+
+            <TextView
+                android:id="@+id/tvElemento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/tvDes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEle" />
+
+            <TextView
+                android:id="@+id/tvDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="descripcion"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/tvDescripcion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvElemento" />
+
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/tvHos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDes" />
+
+            <TextView
+                android:id="@+id/tvHos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="Hostilidad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescripcion"
+                app:layout_constraintBottom_toTopOf="@+id/tvHostilidad"/>
+
+            <TextView
+                android:id="@+id/tvHostilidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/monsterhunter"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@id/vvIntro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHos" />
+
+            <VideoView
+                android:id="@+id/vvIntro"
+                android:layout_width="340dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvHostilidad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btInicio"/>
+
+            <Button
+                android:id="@+id/btInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Inicio"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/fondoTitulo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btVuelta"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vvIntro"/>
+            <Button
+                android:id="@+id/btVuelta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Vuelta"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/fondoTitulo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btOpinion"
+                app:layout_constraintStart_toEndOf="@+id/btInicio"
+                app:layout_constraintTop_toBottomOf="@+id/vvIntro"/>
+            <Button
+                android:id="@+id/btOpinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterhunter"
+                android:text="Opinon"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/fondoTitulo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btVuelta"
+                app:layout_constraintTop_toBottomOf="@+id/vvIntro"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

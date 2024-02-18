@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">HilosSegundoTrimestre</string>
+    <string name="RC0">☆☆☆☆☆☆☆☆☆☆</string>
+    <string name="RC1">★☆☆☆☆☆☆☆☆☆</string>
+    <string name="RC2">★★☆☆☆☆☆☆☆☆</string>
+    <string name="RC3">★★★☆☆☆☆☆☆☆</string>
+    <string name="RC4">★★★★☆☆☆☆☆☆</string>
+    <string name="RC5">★★★★★☆☆☆☆☆</string>
+    <string name="RC6">★★★★★★☆☆☆☆</string>
+    <string name="RC7">★★★★★★★☆☆☆</string>
+    <string name="RC8">★★★★★★★★☆☆</string>
+    <string name="RC9">★★★★★★★★★☆</string>
+    <string name="RC10">★★★★★★★★★★</string>
+    <string-array name="nombre">
+        <item>Altaroth</item>
+        <item>Apceros</item>
+        <item>Aptonoth</item>
+        <item>Bnahabra</item>
+        <item>Cephalos</item>
+        <item>Conga</item>
+        <item>Delex</item>
+        <item>Felyne</item>
+        <item>Gargwa</item>
+        <item>Genprey</item>
+        <item>Hermitaur</item>
+        <item>Ioprey</item>
+        <item>Jaggi</item>
+        <item>Jaggia</item>
+        <item>Kelbi</item>
+        <item>Konchu</item>
+        <item>Melynx</item>
+        <item>Popo</item>
+        <item>Remobra</item>
+        <item>Rhenoplos</item>
+        <item>Slagtoth</item>
+        <item>Velociprey</item>
+        <item>Zamite</item>
+        <item>Akantor</item>
+        <item>Basarios</item>
+        <item>Basarios Bermejo</item>
+        <item>Brachydios</item>
+        <item>Brachydios Colérico</item>
+        <item>Cephadrome</item>
+        <item>Congalala</item>
+        <item>Congalala Esmeralda</item>
+        <item>Daimyo Hermitaur</item>
+        <item>Daimyo Hermitaur Morado</item>
+        <item>Diablos</item>
+        <item>Diablos Negro</item>
+        <item>Deviljho</item>
+        <item>Deviljho Despiadado</item>
+        <item>Gendrome</item>
+        <item>Gore Magala</item>
+        <item>Gore Magala Caótico</item>
+        <item>Shagaru Magala</item>
+        <item>Gravios</item>
+        <item>Gravios Negro</item>
+        <item>Gran Jaggi</item>
+        <item>Gypceros</item>
+        <item>Gypceros Morado</item>
+        <item>Lodrome</item>
+        <item>Kecha Wacha</item>
+        <item>Kecha Wacha Índigo</item>
+        <item>Khezu</item>
+        <item>Khezu Rojo</item>
+        <item>Lagombi</item>
+        <item>Monoblos</item>
+        <item>Monoblos Blanco</item>
+        <item>Najarala</item>
+        <item>Najarala Abisal</item>
+        <item>Nerscylla</item>
+        <item>Nerscylla Sombrío</item>
+        <item>Rajang</item>
+        <item>Rajang Furioso</item>
+        <item>Rathalos</item>
+        <item>Rathalos Celeste</item>
+        <item>Rathalos Plateado</item>
+        <item>Rathian</item>
+        <item>Rathian Rosa</item>
+        <item>Rathian Dorada</item>
+        <item>Seltas</item>
+        <item>Seltas Sílice</item>
+        <item>Seltas Reina</item>
+        <item>Seltas Sílice Reina</item>
+        <item>Seregios</item>
+        <item>Tetsucabra</item>
+        <item>Tetsucabra Berserker</item>
+        <item>Tigrex</item>
+        <item>Tigrex Pardo</item>
+        <item>Tigrex Ígneo</item>
+        <item>Ukanlos</item>
+        <item>Velocidrome</item>
+        <item>Yian Garuga</item>
+        <item>Yian Kut-Ku</item>
+        <item>Yian Kut-Ku Azul</item>
+        <item>Zamtrios</item>
+        <item>Zamtrios Tigre</item>
+        <item>Zinogre</item>
+        <item>Zinogre Estigio</item>
+        <item>Kirin</item>
+        <item>Kirin Boreal</item>
+        <item>Dahren Mohran</item>
+        <item>Chameleos</item>
+        <item>Kushala Daora</item>
+        <item>Kushala Daora Oxidado</item>
+        <item>Teostra</item>
+        <item>Dalamadur</item>
+        <item>Zar Dalamadur</item>
+        <item>Gogmazios</item>
+        <item>Fatalis</item>
+        <item>Fatalis Carmesí</item>
+        <item>Fatalis Blanco</item>
+    </string-array>
+    <string-array name="especies">
+        <item>Herbívoro</item>
+        <item>Neopteron</item>
+        <item>Carapaceon</item>
+        <item>Temnoceran</item>
+        <item>Bestia Colmillos</item>
+        <item>Wyvern Colmillos</item>
+        <item>Anfibio</item>
+        <item>Wyvern Serpiente</item>
+        <item>Wyvern Nadador</item>
+        <item>Wyvern Bruto</item>
+        <item>Wyvern Pájaro</item>
+        <item>Wyvern Volador</item>
+        <item>"???"</item>
+        <item>Dragón Anciano</item>
+        <item>Dragón negro</item>
+    </string-array>
+</resources>
